@@ -33,9 +33,9 @@ public class BluetoothCom {
 
     private final Map<String, AtomicReference<Record>> recordMap = new HashMap<>();
 
-//    public void connectWithoughtSearch(String mac, final int discoverDelay, final int retryCount, final OnConnectListener onConnectListener){
-//        connect(BluetoothAdapter.getDefaultAdapter().getRemoteDevice(mac),discoverDelay,retryCount,onConnectListener);
-//    }
+    public void connectWithoutSearch(String mac, final int discoverDelay, final int retryCount, final OnConnectListener onConnectListener){
+        connect(BluetoothAdapter.getDefaultAdapter().getRemoteDevice(mac),discoverDelay,retryCount,onConnectListener);
+    }
 
     public void connect(final BluetoothDevice bluetoothDevice , final int discoverDelay, final int retryCount, final OnConnectListener onConnectListener){
 
